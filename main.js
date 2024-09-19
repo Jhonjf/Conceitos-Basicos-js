@@ -22,7 +22,27 @@ function alunoDescricao (aluno) {
 
 console.log(alunoDescricao(aluno))
 
-const numeros = (num1, num2) => num1 + num2
-return num1 + num2
+const numeros = (num1, num2) => num1 + num2;
 
-console.log (numero(2, 2))
+console.log (numero(2, 2));
+
+function calculadora (num1, num2, operacao) {
+    if (operacao === '+'){
+    return num1 + num2;
+    }else if (operacao === '-') {
+    return num1 - num2;
+    } else if (operacao === '*') {
+        return num1 * num2;
+    } else if (operacao === '/') {
+        return num1 / num2
+    } else {
+        return 'Operação Inválida';
+    }
+}
+
+console.log(calculadora(5, 10, '+'));
+console.log(calculadora(10, 2, '-'));
+console.log(calculadora(1, 9, '*'));
+console.log(calculadora(10, 2, '/'));
+console.log(calculadora(0, 0, '*'));
+
